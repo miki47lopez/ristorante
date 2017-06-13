@@ -1,0 +1,321 @@
+body{
+    
+    background-image: url(imatges/fons.jpg);
+    background-size: 2000px auto;
+}
+
+div.box {
+    
+        height: 100px;
+        width: 1000px;
+        background-image: url(imatges/fondo.jpg);
+        background-size: 800px auto;
+    
+        border: solid 2px black;
+        margin: 0px auto;
+    
+        padding-top: 1px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 50px;
+
+}
+#logo{
+    
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+}
+
+#temps{
+    
+        background-image: url(imatges/TempsLlarg.png);
+        background-repeat: no-repeat;
+        height:49px;
+        width:97px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+
+#volum{
+    
+        background-image: url(imatges/VolumLlarg.png);
+        background-repeat: no-repeat;
+        height:49px;
+        width:150px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+#posicioactual{
+    
+    font-family: Leelawadee;
+    margin-left: 10px;
+}
+
+#cut{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}
+
+div.box2 {
+    
+        height: 40px;
+        width: 1000px;
+       background-color: peru;  
+        border: solid 2px black;
+        text-align: center;
+        text-decoration:none;
+            
+        color: white;
+        margin: 0px auto; 
+    
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 50px;
+    
+        color="gray";
+        font-size: 20px;
+}
+
+#Noms{
+    
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+    
+    font-size: 15px; 
+    
+}
+#Titol{
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 60px;
+    
+    font-size: 30px;  
+}
+
+
+
+button{
+    
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 100;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 6px;
+    border: 1px solid black; 
+}
+
+#Entrants{
+       
+        text-decoration:none;
+        color: white;
+        border: solid 0px black;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 80px;
+        padding-right: 20px;   
+}
+
+#Primers{
+        text-decoration:none;
+        color: white;
+        border: solid 0px black;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 80px;
+        padding-right: 20px;   
+}
+
+#Segonts{
+        text-decoration:none;
+        color: white;
+        border: solid 0px black;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 80px;
+        padding-right: 20px;   
+}
+
+#Postres{
+        text-decoration:none;
+        color: white;
+        border: solid 0px black;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 80px;
+        padding-right: 20px;   
+}
+
+#MenjarEstrangers{
+        text-decoration:none;
+        color: white;
+        border: solid 0px black;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 80px;
+        padding-right: 20px;   
+}
+
+#Inici{
+    border: solid 0px black;
+    color: white;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li{
+    color: ghostwhite;
+    display: inline;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+div.box3 {
+    
+        height: 880px;
+        width: 1040px;
+        background-color: white;
+        border: solid 2px black;
+        background-image: url(imatges/fondo.jpg);
+        background-size: 1600px auto;
+    
+        margin: 0px auto;
+    
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 20px;
+    
+}
+#Videos{
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 0px;
+    border: solid 0px white;
+    height: 20px;
+    width: 600px;    
+    text-align: center;
+    color: white;
+
+}
+
+#menjars{
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+#Miniatures{
+    height: 150px;
+    width: 330px;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left: 50px;
+    
+    border: solid 0px white;
+}
+
+div.compartir span{
+    
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 5px 3px 5px;
+    font-weight: bold;
+}
+
+
+video {
+    
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 140px;
+        padding-right: 10px;
+}
+
+#controls
+{
+    margin-left: 300px;
+    
+    
+}
+#botoReproduir
+{
+        height:52px;
+        width:52px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+#botoPausa
+{
+        height:52px;
+        width:52px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+#mes
+{
+        height:52px;
+        width:52px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+#menys
+{
+        height:52px;
+        width:52px;
+        border-radius: 6px;
+        border: 1px solid black;
+}
+
+#Fb1{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}
+#Fb2{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}
+#Fb3{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}
+#Fb4{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}
+#Fb5{
+    
+        margin-top: 10px;
+        height:25px;
+        width:25px;
+}

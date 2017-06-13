@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aprèn a cuinar </title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="Exercici.css">
+        
+    </head>
+    
+        <body clas="body">
+            
+         <div class="box"> 
+    
+             <img id="logo" height="80%" width="50%" src="imatges/logo.png">
+              <span id="Titol"> Aprèn a cuinar </span> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <span id="Noms"> Joan Rialp - Miquel Lopez</span> <br/> <br/>
+             
+         </div>
+            
+        
+        <div class="box2">
+            
+                <table>
+                
+                        <tr>
+                        
+                                <td id="Inici"> <a href="Index.html"> <button>Inici</button> </a>  </td>
+                                <td id="Entrants"><button onclick="Entrants()">Entrants </button></td>
+                                <td id="Primers" onclick="Primers()"> <button onclick=""> Primers </button></td>
+                                <td id="Segonts" onclick="Segonts()"> <button onclick=""> Segonts </button></td>
+                                <td id="Postres" onclick="Postres()"> <button onclick=""> Postres </button></td>
+                                <td id="MenjarEstrangers" onclick="MenjarEstrangers()"> <button onclick=""> Menjar Estrangers </button></td>
+                            
+                        </tr>
+                        
+                </table>
+            
+        </div>  
+    
+
+        <div class="box3">
+            
+             <video controls 
+                    id="presentacio"
+                    width="800px"
+                    poster="imatges/steaks.jpg"
+                    src="Videos/Presentacio.mp4" type="video/mp4">
+        
+             </video>
+            
+            <table id="controls">
+            
+                <tr>
+                    <td id="temps">
+                         <span id="posicioactual">  </span> <img src="imatges/cut.png" id="cut"> <span id="duraciototal">  </span>        
+        
+                    </td>
+                    <td>
+                        <button id="botoReproduir"  style="background: url(imatges/play.png)"> </button>
+                    </td>
+                    <td>
+                        <button id="botoPausa" style="background: url(imatges/pause.png)"> </button>
+                    </td>
+                    <td>
+                        <button id="menys" style="background: url(imatges/-.png)"></button>
+                    </td>
+                        
+                    <td>
+                         <button id="mes" style="background: url(imatges/+.png)"></button>
+                    </td>
+                    
+                    <td id="volum">
+                        <img src="imatges/furquilla1.png" id="Fb1">
+                        <img src="imatges/furquilla1.png" id="Fb2"> 
+                        <img src="imatges/furquilla1.png" id="Fb3"> 
+                        <img src="imatges/furquilla1.png" id="Fb4"> 
+                        <img src="imatges/furquilla1.png" id="Fb5"> 
+                        <img src="imatges/furquilla1.png" id="Fw1">
+                        <img src="imatges/furquilla1.png" id="Fw2"> 
+                        <img src="imatges/furquilla1.png" id="Fw3"> 
+                        <img src="imatges/furquilla1.png" id="Fw4"> 
+                        <img src="imatges/furquilla1.png" id="Fw5"> 
+        
+                    </td>
+                </tr>
+            
+            
+            </table>
+            
+        
+        
+       
+       
+            
+
+            <table id="Videos">
+                
+                    <tr id="Titols">
+                            <td> <h2>Especials</h2> </td>
+                            <td> <h2>1 minut</h2> </td>
+                    </tr>
+            </table>
+                              
+            
+            <table id="menjars" height="300px" width="1000px">
+                
+                   
+                    <tr>
+                            <td id="Miniatures"> 
+                              
+                                 <img id="Cor" onclick="playEspecials()" height="125px" width="200px" src="Videos/especials/Cor.png" align="center">
+                                
+                            </td>
+                            <td id="Miniatures">
+                               
+                                  <img id="Nadal" onclick="playEspecials2()" height="125px" width="200px" src="Videos/especials/Nadal.png" align="center">
+                            </td>
+                            <td rowspan="2"  id="Miniatures">
+
+                                 <img  height="300px" width="250px" src="imatges/chef.png" align="center">
+
+                            </td>
+                    </tr>
+                    <tr>
+                             <td id="Miniatures"> 
+                                    <img id="Pimientos" onclick="play1minut()" height="125px" width="200px" src="Videos/1minut/1minutP.png" align="center">
+                            </td>
+                            <td id="Miniatures">
+                                
+                                   <img id="Dedos" onclick="play1minut2()" align="center" height="125px" width="200px" src="Videos/1minut/1minutP2.png">
+                            </td>
+                          
+                     </tr>
+            
+            </table>
+            
+            
+
+        </div>
+            
+            <script>
+          
+            window.onload = function(){
+            var video = document.getElementById("presentacio");
+            var bReproduir = document.getElementById("botoReproduir");
+            var bPausar = document.getElementById("botoPausa");
+            var Dtotal = document.getElementById("duraciototal");
+            var Pactual = document.getElementById("posicioactual");
+            var bMes = document.getElementById("mes");
+            var bMenys = document.getElementById("menys");
+              
+              
+            //Defineixo un event que s'executi quan clicki a BReproduir
+            bReproduir.onclick = function()
+              {
+                  
+                video.play();
+                Dtotal.innerHTML = Math.round (video.duration);
+            }             
+              
+            video.onvolumechange = function()
+            
+            {
+                //alert('volum cambiat');
+                //video.width = "600";
+            }
+            
+            video.ontimeupdate = function()
+            
+            {
+                Pactual.innerHTML = Math.round (video.currentTime);   
+            }
+        
+            bPausar.onclick = function()
+            
+            {
+                video.pause();
+            }
+            bMes.onclick = function()
+            
+            {
+                video.volume = video.volume + 0.2;
+            }
+            bMenys.onclick = function()
+            {
+                video.volume = video.volume -0.2;
+            }
+
+            
+            }
+
+    
+    </script>
+
+                <script src="hellofood.js"></script>
+
+        </body>
+</html>
